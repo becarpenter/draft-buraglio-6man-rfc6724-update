@@ -1,6 +1,7 @@
 ---
 title: Preference for ULAs over RFC1918 addresses in RFC6724
-docname: draft-buraglio-6man-rfc6724-update
+abbrev: Prefer ULAs over RFC1918 addresses
+docname: draft-buraglio-6man-rfc6724-update-00
 cat: std
 ipr: trust200902
 area: Int
@@ -30,10 +31,7 @@ normative:
   RFC2119:
   RFC4193:
   RFC7078:
-  RFC7526:
-  RFC4191:
-  RFC4861:
-    
+  RFC7526:    
 
 informative:
   RFC6724:
@@ -76,7 +74,6 @@ Authors' note for the -00 version: this draft also captures some of the meta dis
 
 {::boilerplate bcp14-tagged}
 
------------
 
 # Unintended Operational Issues Regarding IPv6 Preference and ULAs
 
@@ -278,7 +275,7 @@ assigned by the next-hop that will be used to send to D and SA or
 SA's prefix is assigned by a different next-hop, then prefer SB.
 Discussion: An IPv6 implementation is not required to remember
 which next-hops advertised which prefixes.  The conceptual models
-of IPv6 hosts in Section 5 of {{RFC4861}} and Section 3 of {{RFC4191}}
+of IPv6 hosts in Section 5 of [RFC4861] and Section 3 of [RFC4191]
 have no such requirement.  Hence, Rule 5.5 is only applicable to
 implementations that track this information.
 ~~~~~~~~~~
@@ -294,7 +291,7 @@ assigned by the next-hop that will be used to send to D and SA or
 SA's prefix is assigned by a different next-hop, then prefer SB.
 Discussion: An IPv6 implementation is not required to remember
 which next-hops advertised which prefixes.  The conceptual models
-of IPv6 hosts in Section 5 of {{RFC4861}} and Section 3 of {{RFC4191}}
+of IPv6 hosts in Section 5 of [RFC4861] and Section 3 of [RFC4191]
 have no such requirement.  Hence, Rule 5.5 is only applicable to
 implementations that track this information.
 ~~~~~~~~~~
